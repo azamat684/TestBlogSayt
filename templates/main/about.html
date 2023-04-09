@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">O'zim Haqimda</h2>
+                <p class="text-white-50">
+                    Men Azamat Do'smuxambetov yosh Python dasturchisiman
+                </p>
+            </div>
+        </div>
+        <img class="img-fluid" src="{% static '/BlogSite/templates/rasmlar/python_rasm.png' %}" alt="..." />
+    </div>
+</section>
+
+{% endblock content %}
