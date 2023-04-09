@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 from api.views import ProjectViewSet
 router = DefaultRouter()
-router.register(r'projects',ProjectViewSet,basename='projects'),
+router.register(r'projects',ProjectViewSet,basename='projects')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include("main.urls")),
