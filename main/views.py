@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from api.models import Project
 
 # Create your views here.
 def index(request):
@@ -11,4 +12,5 @@ def contact(request):
     return render(request,"main/contact.html")
 
 def projects(request):
-    return render(request,"main/projects.html")
+    nomlar = Project.objects.all()
+    return render(request,"main/projects.html", {'nomlar': nomlar})
